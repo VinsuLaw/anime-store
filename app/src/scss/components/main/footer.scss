@@ -1,0 +1,79 @@
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    background-color: $app-theme-card;
+    border-top: 1px solid $grey-ccc;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer__container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h2 {
+        color: $font-primary-color;
+        font-weight: 600;
+    }
+}
+
+.footer__socials {
+    margin-left: 10px;
+
+    & a {
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    & img {
+        width: 30px;
+    }
+}
+
+.footer__banks {
+    display: flex;
+    flex-direction: row;
+
+    & .item {
+        text-align: center;
+        width: 60px;
+    }
+
+    & img {
+        height: 20px;
+    }
+}
+
+.rights-reserved {
+    color: $font-primary-color;
+}
+
+.footer__policy {
+    & a {
+        text-decoration: none;
+        color: $font-primary-color;
+        font-size: 15px;
+
+        &:hover {
+            color: $app-theme-color;
+        }
+
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
