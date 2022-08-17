@@ -1,9 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&;display=swap');
 
+@import './_mixins.scss';
+@import './_variables.scss';
+
+@import './components/main/header.scss';
+@import './components/main/header-nav.scss';
+@import './components/main/footer.scss';
+
 * {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container {
+    width: 1110px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.space-beetwen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mt-2 {
+    margin-top: 2rem;
 }
