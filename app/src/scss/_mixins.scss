@@ -1,0 +1,12 @@
+@mixin slider_controll() {
+    position: absolute;
+    cursor: pointer;
+    color: $icons-color;
+    font-size: 40px;
+
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+        color: black;
+    }
+}

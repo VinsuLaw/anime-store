@@ -1,0 +1,29 @@
+.showcase {
+}
+
+.showcase__container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 40px 20px;
+}
+
+.showcase_btn {
+    text-decoration: none;
+
+    background: transparent;
+    border: 1px solid $app-theme-color;
+    border-radius: 5px;
+    color: $app-theme-color;
+    font-weight: 400;
+    cursor: pointer;
+
+    padding: 10px 15px;
+
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        background-color: $app-theme-color;
+        color: white;
+    }
+}
