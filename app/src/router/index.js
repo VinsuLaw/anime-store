@@ -11,6 +11,12 @@ const router = createRouter({
         },
 
         {
+            name: 'manga',
+            path: '/manga',
+            component: () => import('../pages/products/manga.page.vue'),
+        },
+
+        {
             name: '404',
             path: '/:notFound(.*)',
             component: () => import('../pages/404.page.vue'),
