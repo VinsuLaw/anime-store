@@ -4,16 +4,18 @@
             <img src="../../assets/store.png" class="header-nav_logo" />
         </router-link>
         <ul class="header-nav__navigation">
-            <li><router-link to="/news">News</router-link></li>
+            <li><router-link to="/info/news">News</router-link></li>
             <li>
-                <router-link to="/payment">Payment and delivery</router-link>
+                <router-link to="/info/payment"
+                    >Payment and delivery</router-link
+                >
             </li>
             <li>
-                <router-link to="/refund">Refund and warranty</router-link>
+                <router-link to="/info/refund">Refund and warranty</router-link>
             </li>
-            <li><router-link to="/faq">FAQ</router-link></li>
-            <li><router-link to="/contacts">Contacts</router-link></li>
-            <li><router-link to="/about">About us</router-link></li>
+            <li><router-link to="/info/faq">FAQ</router-link></li>
+            <li><router-link to="/info/contacts">Contacts</router-link></li>
+            <li><router-link to="/info/about">About us</router-link></li>
         </ul>
         <div class="header-nav__socials">
             <a href="#">

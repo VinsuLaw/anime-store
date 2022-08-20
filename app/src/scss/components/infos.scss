@@ -1,0 +1,42 @@
+.payment__info_items {
+    a {
+        text-decoration: none;
+        color: $app-theme-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    color: $font-primary-color;
+
+    & p {
+        margin-bottom: 10px;
+    }
+}
+
+.drop-info_item {
+    margin-bottom: 25px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    & .drop-info_title {
+        cursor: pointer;
+        color: $app-theme-color;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    & .drop-info_description {
+        margin-top: 5px;
+        color: $font-primary-color;
+        line-height: 1.5;
+    }
+}
+
+.info__about-text {
+    color: $font-primary-color;
+    line-height: 1.5;
+}

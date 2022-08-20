@@ -1,0 +1,67 @@
+.range {
+    display: flex;
+    flex-direction: column;
+    color: $font-primary-color;
+
+    @include undoSelection();
+}
+
+.range_label {
+    font-size: 18px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.range__container {
+}
+
+.range__slider {
+    width: 160px;
+    height: 6px;
+    background-color: $grey-ccc;
+    border-radius: 3px;
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    z-index: 9;
+    left: 5%;
+    right: 5%;
+
+    height: 6px;
+    background-color: $app-theme-color;
+    border-radius: 3px;
+}
+
+.range__input {
+    position: relative;
+
+    & input {
+        z-index: 99;
+        position: absolute;
+        top: -5px;
+        height: 6px;
+        width: 100%;
+        pointer-events: none;
+        background: none;
+        -webkit-appearance: none;
+    }
+
+    & input[type='range']::-webkit-slider-thumb {
+        @include rangeBtn();
+    }
+}
+
+.range__counts {
+    margin-top: 10px;
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & .range__count {
+        color: $bg-scrollbar;
+    }
+}
