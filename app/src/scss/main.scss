@@ -10,6 +10,12 @@
 @import './components/ui/slider.scss';
 @import './components/ui/showcase.scss';
 @import './components/ui/product.card.scss';
+@import './components/ui/select.scss';
+@import './components/ui/filter.scss';
+@import './components/ui/pagination.scss';
+@import './components/ui/news.scss';
+
+@import './components/infos.scss';
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -24,6 +30,10 @@
 
     margin-left: auto;
     margin-right: auto;
+}
+
+.cont {
+    width: 1110px;
 }
 
 .row {
@@ -46,6 +56,10 @@
     justify-content: center;
 }
 
+.mt-1 {
+    margin-top: 1rem;
+}
+
 .mt-2 {
     margin-top: 2rem;
 }
@@ -58,6 +72,10 @@
     margin-top: 5rem;
 }
 
+.ml-3 {
+    margin-left: 3rem;
+}
+
 .mt-100 {
     margin-top: 100px;
 }
@@ -65,4 +83,15 @@
 .title {
     font-weight: 500;
     color: $font-primary-color;
+}
+
+.width-420 {
+    width: 420px;
+}
+
+.products_view__container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 40px 20px;
 }

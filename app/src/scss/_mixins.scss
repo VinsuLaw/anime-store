@@ -10,3 +10,30 @@
         color: black;
     }
 }
+
+@mixin undoSelection() {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin rangeBtn() {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 2px solid $app-theme-color;
+    border-radius: 50%;
+    cursor: grab;
+
+    pointer-events: auto;
+    -webkit-appearance: none;
+
+    transition: transform 0.1s ease-in-out;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
