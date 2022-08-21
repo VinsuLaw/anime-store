@@ -1,0 +1,98 @@
+.rating__preview {
+    @include undoSelection();
+    cursor: default;
+    margin-top: -15px;
+    display: flex;
+    flex-direction: row;
+
+    & span {
+        color: $grey-ccc;
+        font-size: 18px;
+    }
+
+    & span.active {
+        color: #89579c;
+    }
+}
+
+.product-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & .product-item_img {
+        width: 370px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & .product-item__buy {
+        display: flex;
+        flex-direction: column;
+
+        .price {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                font-size: 14px;
+                color: $font-primary-color;
+            }
+
+            .value {
+                margin-top: 2px;
+                font-size: 26px;
+                color: $app-theme-color;
+                font-weight: 500;
+            }
+        }
+
+        button {
+            margin-top: 25px;
+
+            cursor: pointer;
+            outline: none;
+            border: none;
+            background-color: $app-theme-color;
+            border-radius: 3px;
+            color: white;
+            font-size: 18px;
+
+            width: 180px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: $hover-btn;
+            }
+        }
+
+        button.added {
+            margin-top: 25px;
+
+            cursor: pointer;
+            outline: none;
+            border: none;
+            background-color: $bg-scrollbar;
+            border-radius: 3px;
+            color: white;
+            font-size: 18px;
+
+            width: 180px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.product-item_description {
+    color: $font-primary-color;
+    line-height: 1.5;
+}

@@ -42,6 +42,9 @@ export default {
     components: { AppSelect, FilterPrice, ProductCard, Pagination },
 
     setup() {
+        document.title = 'Manga - GaruDemo store'
+        window.scrollTo(0, 0)
+
         const handleSort = (sort) => {}
 
         const handleFilterPrice = ({ min, max }) => {}

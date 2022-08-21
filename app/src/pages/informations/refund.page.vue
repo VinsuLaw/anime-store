@@ -31,7 +31,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+    setup() {
+        document.title = 'Refund - GaruDemo store'
+        window.scrollTo(0, 0)
+    },
+}
 </script>
 
 <style>

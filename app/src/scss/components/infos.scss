@@ -40,3 +40,16 @@
     color: $font-primary-color;
     line-height: 1.5;
 }
+
+.news-item_img {
+    & img {
+        width: 100%;
+    }
+
+    margin-bottom: 30px;
+}
+
+.news-item_desk {
+    color: $font-primary-color;
+    line-height: 1.5;
+}

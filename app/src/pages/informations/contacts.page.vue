@@ -22,7 +22,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+    setup() {
+        document.title = 'Contacts - GaruDemo store'
+        window.scrollTo(0, 0)
+    },
+}
 </script>
 
 <style>

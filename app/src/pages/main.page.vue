@@ -21,6 +21,11 @@ import ProductsShowcase from '../components/ui/products.showcase.vue'
 
 export default {
     components: { AppSlider, ProductsShowcase },
+
+    setup() {
+        document.title = 'GaruDemo online-store'
+        window.scrollTo(0, 0)
+    },
 }
 </script>
 
