@@ -21,6 +21,11 @@ import NewsItem from '../../components/ui/news.component.vue'
 
 export default {
     components: { NewsItem },
+
+    setup() {
+        document.title = 'News - GaruDemo store'
+        window.scrollTo(0, 0)
+    },
 }
 </script>
 

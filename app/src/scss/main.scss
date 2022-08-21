@@ -14,8 +14,12 @@
 @import './components/ui/filter.scss';
 @import './components/ui/pagination.scss';
 @import './components/ui/news.scss';
+@import './components/ui/reviews.scss';
 
 @import './components/infos.scss';
+@import './components/cart.scss';
+@import './components/auth.scss';
+@import './components/product-item.scss';
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -80,6 +84,10 @@
     margin-top: 100px;
 }
 
+.mt-8px {
+    margin-top: 8px;
+}
+
 .title {
     font-weight: 500;
     color: $font-primary-color;
@@ -89,9 +97,30 @@
     width: 420px;
 }
 
+.w-100p {
+    width: 100%;
+}
+
 .products_view__container {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 40px 20px;
+}
+
+.d-block {
+    display: block;
+}
+
+.error {
+    color: #d74949;
+}
+
+.page-not-found {
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -21,9 +21,7 @@
                 <div class="header__buttons_container">
                     <router-link to="/cart" class="header_btn">
                         <span class="material-icons">shopping_cart</span>
-                    </router-link>
-                    <router-link to="/favorites" class="header_btn">
-                        <span class="material-icons">favorite_border</span>
+                        <div class="count">1</div>
                     </router-link>
                 </div>
 

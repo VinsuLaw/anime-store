@@ -15,6 +15,9 @@ export default {
     components: { DropInfo },
 
     setup() {
+        document.title = 'FAQ - GaruDemo store'
+        window.scrollTo(0, 0)
+
         const infos = [
             {
                 title: 'Почему переносится дата релиза у манги?',

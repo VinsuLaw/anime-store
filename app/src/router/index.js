@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import $store from '../store/index'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -65,11 +66,53 @@ const router = createRouter({
         },
 
         {
+            name: 'cart',
+            path: '/cart',
+            component: () => import('../pages/products/cart.page.vue'),
+        },
+
+        {
+            name: 'auth1',
+            path: '/registration',
+            component: () =>
+                import('../pages/authorization/registration.page.vue'),
+        },
+
+        {
+            name: 'auth2',
+            path: '/login',
+            component: () => import('../pages/authorization/login.page.vue'),
+        },
+
+        {
+            name: 'product-item',
+            path: '/product/:id',
+            component: () => import('../pages/products/product.page.vue'),
+        },
+
+        {
+            name: 'news-item',
+            path: '/news/:id',
+            component: () => import('../pages/informations/news-item.page.vue'),
+        },
+
+        {
             name: '404',
             path: '/:notFound(.*)',
             component: () => import('../pages/404.page.vue'),
         },
     ],
+})
+
+router.beforeEach((to, from, next) => {
+    if (to.name === 'auth1' || to.name === 'auth2') {
+        $store.commit('setCurrentPage', 'auth')
+        console.log($store.state.currentPage)
+    } else {
+        $store.commit('setCurrentPage', to.name)
+    }
+
+    next()
 })
 
 export default router

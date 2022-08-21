@@ -1,10 +1,10 @@
 <template>
     <AppHeader />
-    <AppHeaderNav />
+    <AppHeaderNav v-if="$store.state.currentPage !== 'auth'" />
 
     <router-view></router-view>
 
-    <AppFooter />
+    <AppFooter v-if="$store.state.currentPage !== 'auth'" />
 </template>
 
 <script>
